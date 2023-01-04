@@ -1,10 +1,11 @@
 import { Outlet } from '@remix-run/react';
+import ExpensesList from '~/components/ExpensesList';
 
 const ExpensesLayout = () => {
   return (
     <main>
-      <div>Shared layout</div>
       <Outlet />
+      <ExpensesList />
     </main>
   );
 };

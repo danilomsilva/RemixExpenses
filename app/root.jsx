@@ -6,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
+import Navigation from './components/Navigation';
 
 import styles from './styles/app.css';
 
@@ -23,10 +24,22 @@ export default function App() {
   return (
     <html lang="en">
       <head>
+        {/* Load other fonts as shown below */}
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+          rel="stylesheet"
+        /> */}
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-gradient-to-r from-purple-500 to-pink-500">
+        <Navigation />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
