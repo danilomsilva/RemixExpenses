@@ -39,7 +39,6 @@ export default function App() {
         <Links />
       </head>
       <body className="bg-gradient-to-r from-purple-500 to-pink-500">
-        <Navigation />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

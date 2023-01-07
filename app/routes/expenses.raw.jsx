@@ -1,5 +1,8 @@
-const ExpensesRaw = () => {
-  return <div>ExpensesRaw</div>;
-};
-
-export default ExpensesRaw;
+export function loader() {
+  return [
+    {
+      id: 123,
+      description: 'Some data can be displayed here!!',
+    },
+  ];
+}
