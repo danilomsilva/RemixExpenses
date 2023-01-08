@@ -6,7 +6,6 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-import Navigation from './components/Navigation';
 
 import styles from './styles/app.css';
 
@@ -38,7 +37,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-gradient-to-r from-purple-500 to-pink-500">
+      <body className="bg-gradient-to-r from-blue-500 to-cyan-500">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
